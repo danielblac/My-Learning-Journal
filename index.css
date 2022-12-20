@@ -1,0 +1,230 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.header, .logo {
+    display: flex;
+    align-items: center;
+    gap: 0.25em;
+}
+
+.header {
+    padding: 1em;
+    justify-content: space-between;
+}
+
+.header a {
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+}
+
+nav a {
+    margin-left: 1em;
+}
+
+.container {
+    margin-bottom: 2em;
+}
+
+.intro {
+    width: 100%;
+    background: skyblue url(./image/background-image.png);
+    color: white;
+    background-size: cover;
+}
+
+.intro-content {
+    padding: 4em 1em 1em;
+}
+
+.home-intro-content {
+    margin-bottom: 3em;
+}
+
+.intro-content p,
+.intro-content h2,
+.home-intro-content p,
+.home-intro-content h2 {
+    margin-bottom: 0.6em;
+}
+
+.home-intro-content h1 {
+    margin-bottom: 0.5em;
+}
+
+.info p,
+.info h4,
+.about-info p,
+.about-info h4 {
+    margin-bottom: 1em;
+}
+
+.home-intro {
+    margin: 2em 1em;
+}
+
+.home-intro img {
+    width: 100%;
+    height: 100%;
+    border-radius: 0.3em;
+    object-fit: cover;
+    margin: 1em 0 1.5em;
+}
+
+.about-intro .display-picture {
+    width: 12em;
+    height: 12em;
+    border-radius: 50%;
+    margin: 0;
+}
+
+.about-intro-content {
+    margin: 1em 0 3em;
+}
+
+.about-intro-content h1 {
+    margin-bottom: 0.3em;
+}
+
+.feeds {
+    width: 100%;
+    padding: 1em 1em 0;
+    margin-top: 1.5em;
+}
+
+.feed {
+    display: grid;
+    grid-template-rows: 250px auto auto auto;
+    gap: 1em;
+    margin-bottom: 2.5em;
+}
+
+.feed img {
+    width: 100%;
+    height: 100%;
+    border-radius: 0.3em;
+    object-fit: cover;
+}
+
+.off {
+    display: none;
+}
+
+.view-more {
+    margin-top: -1.5em;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.recent-posts {
+    margin-top: 0;
+    text-align: center;
+    font-weight: bold;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 2em;
+}
+
+@media (min-width: 575px) {
+    .header {
+        padding: 2.5em;
+    }
+
+    nav a {
+        margin-left: 2.5em;
+    }
+
+    .about-intro,
+    .container {
+        margin-bottom: 4em;
+    }
+
+    .intro-content {
+        width: 69%;
+        padding: 15em 2.5em 2.5em;
+    }
+
+    .intro-content h2 {
+        font-size: 2.5rem;
+    }
+
+    .intro-content p {
+        width: 95%;
+        font-size: 17px;
+        line-height: 1.25em;
+    }
+
+    .home-intro {
+        margin: 2em 2.5em;
+    }
+
+    .home-intro-content,
+    .info,
+    .about-info {
+        width: 85%;
+        margin: 0 auto;
+    }
+
+    .home-intro-content,
+    .info {
+        font-size: 1.25rem;
+    }
+
+    .home-intro-content h2 {
+        font-size: 2.25rem;
+    }
+
+    .about-intro {
+        display: flex;
+        align-items: flex-start;
+        gap: 1em;
+        margin-top: 4em;
+    }
+
+    .about-intro-content {
+        margin-top: 0.6em;
+    }
+
+    .about-intro-content h1 {
+        font-size: 2.25rem;
+    }
+
+    .info h4,
+    .recent-posts {
+        font-size: 1.5rem;
+        letter-spacing: 0.07em;
+    }
+
+    .off {
+        display: grid;
+    }
+
+    .on {
+        display: none;
+    }
+
+    .feeds {
+        display: grid;
+        grid-template: repeat(auto-fill, minmax(200px, 1fr)) / 1fr 1fr 1fr;
+        gap: 1.5em;
+        padding: 2.5em 2.5em 0;
+        margin-top: 1.5em;
+    }
+
+    .view-more {
+        margin-top: 0;
+    }
+}
