@@ -29,6 +29,13 @@ nav a {
     margin-left: 1em;
 }
 
+.header,
+.intro-content,
+.feeds {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
 .container {
     margin-bottom: 2em;
 }
@@ -140,7 +147,7 @@ footer {
 
 @media (min-width: 575px) {
     .header {
-        padding: 2.5em;
+        padding: 1.5em;
     }
 
     nav a {
